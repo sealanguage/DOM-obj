@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        img {
+            border: 1px solid black;
+            margin: 6px;
+        }
+     
+        
+    </style>
+    <title>change images</title>
+</head>
+<body>
+    <button onclick="turnOn()">Turn On </button>  <button onclick="turnOff()">Turn Off</button><br>
+    
+    <img src="http://i.telegraph.co.uk/multimedia/archive/02049/26_2049425i.jpg" id="look" width="50%" name="off" >
+  
+<!--
+        <img src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAwMi83NTkvb3JpZ2luYWwvMDgxMjA5LWxpZ2h0LWJ1bGItMDIuanBn";>
+-->
+
+<script>
+    function turnOff() {
+        document.getElementById("look").src="http://i.telegraph.co.uk/multimedia/archive/02049/26_2049425i.jpg";
+    }
+    function turnOn() {
+        document.getElementById("look").src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzAwMi83NTkvb3JpZ2luYWwvMDgxMjA5LWxpZ2h0LWJ1bGItMDIuanBn";
+    }
+    </script>
+</body>
+</html>
